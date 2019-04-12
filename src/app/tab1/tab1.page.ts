@@ -71,7 +71,7 @@ export class Tab1Page {
 
   async shareItem(item, index) {
     const toast = await this.toastController.create({
-      message: 'Sharing item - ' + index + "...",
+      message: 'Sharing item - ' + item.Name + "...",
       duration: 3000
     })
     toast.present();
